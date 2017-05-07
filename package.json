@@ -1,0 +1,25 @@
+{
+  "name": "mercadolibre",
+  "version": "1.0.0",
+  "description": "Mercadolibre FrontEnd Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santalurr/mercadolibre.git"
+  },
+  "author": "Santiago Alurralde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santalurr/mercadolibre/issues"
+  },
+  "homepage": "https://github.com/santalurr/mercadolibre#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

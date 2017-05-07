@@ -1,1 +1,37 @@
-styles.css
+/* Custom Styles */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.searchbox {
+	background-color: #FFE600;
+	width: 100%;
+	text-align: center;
+	height: 50px;	
+}
+
+.searchbox-logo {
+	margin-right: 20px;
+	float: left;
+    margin-top: 7px;
+}
+
+.searchbox__input {
+	width: 60%;
+	border-radius: 3px;
+	border: none;
+	z-index: 99999;
+}
+
+.searchbox__button {
+	border: none;
+	border-radius: 3px;
+	margin-left: -5px;
+	z-index: 1;
+}
+
+.searchbox__button img {
+	color: #999;
+}
