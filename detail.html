@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buscar Producto</title>
+
+	<link rel="stylesheet" href="styles.css" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- SearchBox -->
+	<nav class="searchbox">
+
+		<div class="searchbox__fieldset input-group">
+			<img class="searchbox-logo" src="assets/Logo_ML.png" align="top">
+			<input class="form-control searchbox__input" 
+				type="text" 
+				placeholder="Nunca dejes de buscar">
+
+			<span class="input-group-btn">
+				<button class="btn searchbox__button" type="button">
+					<img src="assets/ic_Search.png">
+				</button>
+	   		</span>
+   		</div>
+	</nav>
+
+	<div class="main-wrapper">
+		<section class="content-wrapper search-results">
+		<!--pass search results styles to content wrapper-->
+			<section class="search-filter">
+				Ipod > Touch > 32gb
+			</section>
+
+			<section class="row product-wrapper">
+				<img class="col-md-8 product-image" src="assets/ipod.jpeg">
+				
+				<div class="col-md-4 product-detail">
+					<div class="product-detail__type">
+						Nuevo - 320 Vendidos
+					</div>
+					<strong class="product-detail__title">
+						Ipod Touch 32gb
+					</strong>
+
+					<div class="product-detail__price">
+						$1.980
+						<sup>
+							00
+						</sup>
+					</div>
+					<button type="button" class="product-detail__buy-button">
+						Comprar
+					</button>
+				</div>
+
+				<div class="col-md-12 product-description">
+					<span class="product-description__title"> 
+						Descripción del Producto
+					</span>
+
+					<p class="col-md-9 product-description__body">
+						El iPod touch no debe confundirse con el iPhone, ya que a pesar de compartir varias características no permite realizar llamadas telefónicas.
+						Pantalla panorámica de 4 pulgadas (en diagonal) con tecnología IPS y Multi-Touch. Chip A8 con arquitectura de 64 bits y Coprocesador de movimiento M8. Cámara iSight de 8 Mpx. Grabación de vídeo en 1080p HD (30 f/s). Conexión Wi-Fi 802.11a/b/g/n/ac y Bluetooth 4.1. Reproducción de música: hasta 40 horas. Reproducción de vídeo: hasta 8 horas.
+					</p>
+				</div>
+			</section>
+		</section>
+	</div>
+</body>
+</html>

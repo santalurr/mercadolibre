@@ -1,8 +1,35 @@
 /* Custom Styles */
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  background-color: #EEE !important;
+}
+
+body, p {
 	padding: 0;
 	margin: 0;
+	color: #333;
+}
+
+div.col-md-1,
+div.col-md-2,
+div.col-md-3,
+div.col-md-4,
+div.col-md-5,
+div.col-md-6,
+div.col-md-7,
+div.col-md-8,
+img.col-md-8,
+div.col-md-9,
+div.col-md-10,
+div.col-md-11,
+div.col-md-12 {
+	margin: 0;
+	padding: 0;
 }
 
 .searchbox {
@@ -12,26 +39,150 @@ body {
 	height: 50px;	
 }
 
-.searchbox-logo {
-	margin-right: 20px;
-	float: left;
-    margin-top: 7px;
+.searchbox__fieldset.input-group {
+	top: 8px;
+	width: 70%;
+    margin: 0 auto;
 }
 
-.searchbox__input {
-	width: 60%;
-	border-radius: 3px;
+.searchbox-logo {
+	position: absolute;
+	z-index: 9999;
+	left: 15%;
+	top: 8px;
+}
+
+.searchbox .input-group.searchbox__fieldset .searchbox__input.form-control {
+	max-width: 800px;
+	min-width: 100px;
+	float: right;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 	border: none;
-	z-index: 99999;
 }
 
 .searchbox__button {
 	border: none;
-	border-radius: 3px;
-	margin-left: -5px;
-	z-index: 1;
+	border-radius: 4px;
+	float: right;
+	background-color: #EEE;
 }
 
 .searchbox__button img {
 	color: #999;
+}
+
+.main-wrapper {
+	background-color: #EEE;
+	width: 100%;
+	min-height: 100%;
+}
+
+.content-wrapper {
+	width: 70%;
+	margin: 0 auto;
+}	
+
+.product-detail__type {
+	font-size: 14px;
+	margin-bottom: 14px;
+}
+
+.row.product-wrapper {
+	margin: 0;
+	padding: 32px 32px 0 32px;
+	background-color: #FFF;
+}	
+
+.product-image {
+	width: 680px;
+}
+
+.search-filter {
+	padding: 16px 0;
+	color: #666;
+}
+
+.product-detail__price {
+	margin-top: 32px;
+	font-size: 46px;
+}
+
+.product-detail__title {
+	font-size: 24px;
+}
+
+.product-detail__buy-button {
+	margin-top: 32px;
+	border: none;
+	background-color: #3483FA;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+div.product-description {
+	margin-top: 64px;
+}
+
+.product-description__title {
+	font-size: 28px;
+	color: #666;
+}
+
+.product-description__body {
+	padding: 14px 0;
+	color: #666;
+	text-align: justify;
+}
+
+.product-description__body.col-md-9 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+
+.row.list-wrapper {
+	margin: 0;
+	padding: 0 14px;
+	border-radius: 5px;
+	background-color: #FFF;
+}	
+
+.row.list-item {
+	padding: 14px;
+	list-style: none;
+	border-bottom: 1px solid #EEE;
+	display: block;	
+}
+
+.col-md-3.list-item__image {
+	padding: 0;
+	width: 150px;
+	height: 150px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px !important;
+}
+
+div.list-item__details {
+	padding-left: 14px;	
+}
+
+.list-item__details__location {
+	font-size: 12px;
+	color: #666;
+}
+
+.list-item__details__price {
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 32px;
+}
+
+.list-item__details__description {
+	color: #333;	
 }
