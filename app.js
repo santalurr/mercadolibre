@@ -1,9 +1,13 @@
 var express = require('express');
 var app = express();
+var path = require("path");
 
-app.get('/', function (req, res) {
-  res.send('list.html');
-})
+app.use(express.static(__dirname + '/view'));
+app.use(express.static(__dirname + '/script'));
+
+app.get('/',function(req,res) {
+  res.sendFile('list.html');
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
