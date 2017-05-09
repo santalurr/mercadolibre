@@ -14,19 +14,19 @@ angular.module('MercadoLibreApp',
     .state('Search', {
         url: '/',
         controller: 'SearchCtrl',
-        templateUrl: 'modules/Search/searchbox.html'
+        templateUrl: 'index.html'
     })
 
     .state('SearchResults', {
-        url: '/productsList',
+        url: '/items?search=:query',
         controller: 'SearchCtrl',
         templateUrl: 'modules/Search/list.html'
     })    
 
-    .state('ProductDetail', {
-        url: '/productDetail',
-        controller: 'ProductCtrl',
-        templateUrl: 'modules/Product/detail.html'
+    .state('ItemDetail', {
+        url: '/items/:id',
+        controller: 'ItemCtrl',
+        templateUrl: 'modules/Item/detail.html'
     });
 
 }).run(function () {

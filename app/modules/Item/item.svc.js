@@ -1,11 +1,11 @@
 angular.module('MercadoLibreApp')
 
-.factory('ProductService', ['$http', 
+.factory('ItemService', ['$http', 
 
 function($http) {
         
     return {
-		getProduct: function() {
+		getItem: function() {
             return $http.get(ENVIRONMENT_CONFIGS.APIURL + "projects", params);
         }
     };
