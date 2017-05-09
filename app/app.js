@@ -14,7 +14,6 @@ angular.module('MercadoLibreApp',
     .state('Search', {
         url: '/',
         controller: 'SearchCtrl',
-        templateUrl: 'index.html'
     })
 
     .state('SearchResults', {

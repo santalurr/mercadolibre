@@ -8,7 +8,25 @@
 </head>
 <body ng-app="MercadoLibreApp">
 
-	<!-- Insert Search Bar Here -->
+	<nav class="searchbox">
+		<img class="searchbox-logo" src="assets/Logo_ML.png">
+		<div class="row searchbox__fieldset input-group">
+			
+			<input class="form-control searchbox__input" 
+				type="text" 
+				ng-model="searchQuery"
+				placeholder="Nunca dejes de buscar">
+
+			<span class="input-group-btn">
+				<button 
+					ng-click="searchItem()"
+					class="btn searchbox__button" 
+					type="button">
+					<img src="assets/ic_Search.png">
+				</button>
+	   		</span>
+		</div>
+	</nav>
 
 	<ui-view></ui-view>
 
