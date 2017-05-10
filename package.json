@@ -4,8 +4,7 @@
   "description": "Mercadolibre FrontEnd Test",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && bower install"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
