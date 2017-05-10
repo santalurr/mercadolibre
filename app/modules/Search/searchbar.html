@@ -1,0 +1,22 @@
+<nav class="searchbar">
+	<div class="searchbar-logo">
+		<img class="searchbar-logo__img" src="assets/Logo_ML.png">
+	</div>
+
+	<form class="row searchbar__fieldset input-group">
+		<input class="form-control searchbar__input" 
+			type="text" 
+			ng-model="searchQuery"
+			placeholder="Nunca dejes de buscar">
+
+		<span class="input-group-btn">
+			<button 
+				ng-click="searchItem()"
+				class="btn searchbar__button" 
+				type="submit">
+				<img src="assets/ic_Search.png">
+			</button>
+   		</span>
+	</form>
+</nav>
+

@@ -1,3 +1,14 @@
+.main-wrapper {
+  background-color: #EEE;
+  width: 100%;
+  min-height: 100%;
+}
+
+.content-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
 html {
   height: 100%;
 }
@@ -8,8 +19,8 @@ body {
 }
 
 body, p {
-  padding: 0;
   margin: 0;
+  padding: 0;
   color: #333;
 }
 
@@ -30,53 +41,42 @@ div.col-md-12 {
   padding: 0;
 }
 
-/* Custom Styles */
-.main-wrapper {
-  background-color: #EEE;
-  width: 100%;
-  min-height: 100%;
-}
-
-.content-wrapper {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.searchbox {
+.searchbar {
   background-color: #FFE600;
   width: 100%;
   text-align: center;
   height: 50px;
 }
-.searchbox .input-group.searchbox__fieldset .searchbox__input.form-control {
-  max-width: 800px;
-  min-width: 100px;
+.searchbar .searchbar__fieldset.input-group {
+  top: 8px;
+  width: 70%;
+  margin: 0 auto;
+}
+.searchbar .searchbar__fieldset.input-group .searchbar__input.form-control {
+  max-width: 90%;
+  min-width: 90px;
   float: right;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
 }
 
-.searchbox__fieldset.input-group {
-  top: 8px;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.searchbox-logo {
+.searchbar-logo {
   position: absolute;
+  display: inline-block;
   z-index: 9999;
   left: 15%;
+  width: 4%;
   top: 8px;
 }
 
-.searchbox__button {
+.searchbar__button {
   border: none;
   border-radius: 4px;
   float: right;
   background-color: #EEE;
 }
-.searchbox__button img {
+.searchbar__button img {
   color: #999;
 }
 
@@ -87,7 +87,8 @@ div.col-md-12 {
 
 .row.product-wrapper {
   margin: 0;
-  padding: 32px 32px 0 32px;
+  padding: 32px;
+  padding-bottom: 0;
   background-color: #FFF;
 }
 

@@ -1,0 +1,41 @@
+.searchbar {
+	background-color: $yellow;
+	width: 100%;
+	text-align: center;
+	height: 50px;	
+
+	.searchbar__fieldset.input-group {
+		top: 8px;
+		width: 70%;
+	    margin: 0 auto;
+
+		.searchbar__input.form-control {
+			max-width: 90%;
+			min-width: 90px;
+			float: right;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border: none;
+		}
+	}
+}
+
+.searchbar-logo {
+	position: absolute;
+	display: inline-block;
+	z-index: 9999;
+	left: 15%;
+	width: 4%;
+	top: 8px;
+}
+
+.searchbar__button {
+	border: none;
+	border-radius: 4px;
+	float: right;
+	background-color: $lightgray;
+
+	img {
+		color: #999;
+	}
+} 

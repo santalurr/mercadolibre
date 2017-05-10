@@ -3,30 +3,14 @@
 <head>
 	<title>Buscar Producto</title>
 
+	<link rel="icon" href="assets/Logo_ML.png" type="image/png" />
+
 	<link rel="stylesheet" href="main.css" />
     <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body ng-app="MercadoLibreApp">
 
-	<nav class="searchbox" ng-controller="SearchCtrl">
-		<img class="searchbox-logo" src="assets/Logo_ML.png">
-		<div class="row searchbox__fieldset input-group">
-			
-			<input class="form-control searchbox__input" 
-				type="text" 
-				ng-model="searchQuery"
-				placeholder="Nunca dejes de buscar">
-
-			<span class="input-group-btn">
-				<button 
-					ng-click="searchItem()"
-					class="btn searchbox__button" 
-					type="button">
-					<img src="assets/ic_Search.png">
-				</button>
-	   		</span>
-		</div>
-	</nav>
+	<search-bar></search-bar>
 
 	<ui-view></ui-view>
 
@@ -38,6 +22,7 @@
 	<script type="text/javascript" src="modules/Item/item.svc.js"></script>	
 	<script type="text/javascript" src="modules/Search/search.ctrl.js"></script>
 	<script type="text/javascript" src="modules/Search/search.svc.js"></script>
+	<script type="text/javascript" src="modules/Search/searchbar.directive.js"></script>
 
 </body>
 </html>

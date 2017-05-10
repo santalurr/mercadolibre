@@ -9,7 +9,8 @@ angular.module('MercadoLibreApp')
 	if($stateParams.query) {
 		SearchService.getProductList($stateParams.query)
 		.then(function(res) {
-			$scope.itemsList = res.data.results;
+			var totalItems = res.data.results;
+			$scope.itemsList = totalItems.splice(0, 4);
 		},
 		function(error) {
 			
