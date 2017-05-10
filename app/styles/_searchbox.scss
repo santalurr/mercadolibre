@@ -1,5 +1,5 @@
 .searchbox {
-	background-color: #FFE600;
+	background-color: $yellow;
 	width: 100%;
 	text-align: center;
 	height: 50px;	
@@ -31,7 +31,7 @@
 	border: none;
 	border-radius: 4px;
 	float: right;
-	background-color: #EEE;
+	background-color: $lightgray;
 
 	img {
 		color: #999;

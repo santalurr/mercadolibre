@@ -1,12 +1,13 @@
 .product-detail__type {
 	font-size: 14px;
-	margin-bottom: 14px;
+	margin-bottom: $space-narrow;
 }
 
 .row.product-wrapper {
 	margin: 0;
-	padding: 32px 32px 0 32px;
-	background-color: #FFF;
+	padding: $space-broad;
+	padding-bottom: 0;
+	background-color: $white;
 }	
 
 .product-image {
@@ -15,11 +16,11 @@
 
 .search-filter {
 	padding: 16px 0;
-	color: #666;
+	color: $gray;
 }
 
 .product-detail__price {
-	margin-top: 32px;
+	margin-top: $space-broad;
 	font-size: 46px;
 }
 
@@ -28,10 +29,10 @@
 }
 
 .product-detail__buy-button {
-	margin-top: 32px;
+	margin-top: $space-broad;
 	border: none;
-	background-color: #3483FA;
-	color: #FFF;
+	background-color: $blue;
+	color: $white;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
@@ -44,12 +45,12 @@ div.product-description {
 
 .product-description__title {
 	font-size: 28px;
-	color: #666;
+	color: $gray;
 }
 
 .product-description__body {
-	padding: 14px 0;
-	color: #666;
+	padding: $space-narrow 0;
+	color: $gray;
 	text-align: justify;
 
 	&.col-md-9 {
