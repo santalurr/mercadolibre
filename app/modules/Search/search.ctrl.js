@@ -1,18 +1,18 @@
 angular.module('MercadoLibreApp')
 
-.controller('SearchCtrl', function($scope, $state, SearchService) {
+.controller('SearchCtrl', function($scope, $state, $stateParams, SearchService) {
 
 	$scope.searchItem = function() {
 		$state.go("SearchResults", {query: $scope.searchQuery});
 	};
 
-  	/*
-		SearchService.getProductList($scope.searchQuery)
-		.then(function() {
-				
+	if($stateParams.query) {
+		SearchService.getProductList($stateParams.query)
+		.then(function(res) {
+			$scope.itemsList = res.data.results;
 		},
-		function() {
-
+		function(error) {
+			
 		});
-	*/
+	}
 });

@@ -1,12 +1,12 @@
 angular.module('MercadoLibreApp')
 
-.factory('SearchService', ['$http', 
+.factory('SearchService', ['$http', 'API',
 
-function($http) {
+function($http, API) {
         
     return {
-		getProductList: function() {
-            return $http.get(ENVIRONMENT_CONFIGS.APIURL + "projects", params);
+		getProductList: function(query) {
+            return $http.get(API.SEARCH + query);
         }
     };
 }]);

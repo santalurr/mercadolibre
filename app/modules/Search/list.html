@@ -2,59 +2,30 @@
 	<section class="content-wrapper search-results">
 	<!--pass search results styles to content wrapper-->
 		<section class="search-filter">
-			Ipod > Touch > 32gb
+			Inicio > "{{searchQuery}}"
 		</section>
 
 		<ul class="row list-wrapper">
-			<li class="row list-item">
-				<img class="col-md-3 list-item__image" src="https://i.ytimg.com/vi/0k7-Ay2fqvA/maxresdefault.jpg">
+			<li ng-repeat="item in itemsList"
+				class="row list-item">
+
+				<img class="col-md-3 list-item__image" ng-src="{{item.thumbnail}}">
 
 				<div class="col-md-7 list-item__details">
 					<div class="list-item__details__price"> 
-						$1.980
+						${{item.price}}
 					</div>
-					<div class="list-item__details__description">
-						Ipod Touch 32gb
+					<div 
+						ui-sref="ItemDetail({ id: item.id })"
+						class="list-item__details__description">
+						{{item.title}}
 					</div>
 				</div>
 
 				<div class="col-md-2 list-item__details__location">
-					Capital Federal
-				</div>
-			</li>
-			<li class="row list-item">
-				<img class="col-md-3 list-item__image" src="assets/ipod.jpeg">
-
-				<div class="col-md-7 list-item__details">
-					<div class="list-item__details__price"> 
-						$1.980
-					</div>
-					<div class="list-item__details__description">
-						Ipod Touch 32gb
-					</div>
-				</div>
-
-				<div class="col-md-2 list-item__details__location">
-					Capital Federal
-				</div>
-			</li>
-			<li class="row list-item">
-				<img class="col-md-3 list-item__image" src="assets/ipod.jpeg">
-
-				<div class="col-md-7 list-item__details">
-					<div class="list-item__details__price"> 
-						$1.980
-					</div>
-					<div class="list-item__details__description">
-						Ipod Touch 32gb
-					</div>
-				</div>
-
-				<div class="col-md-2 list-item__details__location">
-					Capital Federal
+					{{item.address.state_name}}
 				</div>
 			</li>													
 		</ul>
-
 	</section>
 </div>

@@ -2,7 +2,8 @@
 
 angular.module('MercadoLibreApp', 
 [
-  'ui.router'
+  'ui.router',
+  'ngSanitize'
 ])
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -28,6 +29,15 @@ angular.module('MercadoLibreApp',
         templateUrl: 'modules/Item/detail.html'
     });
 
-}).run(function () {
+})
 
-}); 
+.constant('API', (function() {
+  var apiAddress = 'https://api.mercadolibre.com';
+  // https://api.mercadolibre.com:id​/description
+  // https://api.mercadolibre.com/sites/MLA/search?q=:query
+  return {
+    SEARCH: apiAddress + '/sites/MLA/search?q=',
+    ITEM: apiAddress + '/items/',
+    CATEGORY: apiAddress + '/categories/'
+  }
+})()); 

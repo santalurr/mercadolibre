@@ -2,22 +2,25 @@
 	<section class="content-wrapper search-results">
 	<!--pass search results styles to content wrapper-->
 		<section class="search-filter">
-			Ipod > Touch > 32gb
+			<span ng-repeat="category in categories"> 
+				{{category.name}} 
+				{{$last ? '' : ' > '}}
+			</span>
 		</section>
 
 		<section class="row product-wrapper">
-			<img class="col-md-8 product-image" src="assets/ipod.jpeg">
+			<img class="col-md-9 product-image" ng-src="{{item.pictures[0].secure_url}}">
 			
-			<div class="col-md-4 product-detail">
+			<div class="col-md-3 product-detail">
 				<div class="product-detail__type">
-					Nuevo - 320 Vendidos
+					Nuevo - {{item.sold_quantity}} Vendidos
 				</div>
 				<strong class="product-detail__title">
-					Ipod Touch 32gb
+					{{item.title}}
 				</strong>
 
 				<div class="product-detail__price">
-					$1.980
+					${{item.base_price}}
 					<sup>
 						00
 					</sup>
@@ -32,9 +35,8 @@
 					Descripción del Producto
 				</span>
 
-				<p class="col-md-9 product-description__body">
-					El iPod touch no debe confundirse con el iPhone, ya que a pesar de compartir varias características no permite realizar llamadas telefónicas.
-					Pantalla panorámica de 4 pulgadas (en diagonal) con tecnología IPS y Multi-Touch. Chip A8 con arquitectura de 64 bits y Coprocesador de movimiento M8. Cámara iSight de 8 Mpx. Grabación de vídeo en 1080p HD (30 f/s). Conexión Wi-Fi 802.11a/b/g/n/ac y Bluetooth 4.1. Reproducción de música: hasta 40 horas. Reproducción de vídeo: hasta 8 horas.
+				<p class="col-md-11 product-description__body" ng-bind-html="description">
+					
 				</p>
 			</div>
 		</section>
