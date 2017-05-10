@@ -7,6 +7,8 @@ angular.module('MercadoLibreApp')
 	};
 
 	if($stateParams.query) {
+		$scope.lastSearch = $stateParams.query;
+
 		SearchService.getProductList($stateParams.query)
 		.then(function(res) {
 			var totalItems = res.data.results;
