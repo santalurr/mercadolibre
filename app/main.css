@@ -48,6 +48,14 @@ div.col-md-12 {
   text-align: center;
   height: 50px;
 }
+.searchbox .input-group.searchbox__fieldset .searchbox__input.form-control {
+  max-width: 800px;
+  min-width: 100px;
+  float: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
 
 .searchbox__fieldset.input-group {
   top: 8px;
@@ -62,22 +70,12 @@ div.col-md-12 {
   top: 8px;
 }
 
-.searchbox .input-group.searchbox__fieldset .searchbox__input.form-control {
-  max-width: 800px;
-  min-width: 100px;
-  float: right;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border: none;
-}
-
 .searchbox__button {
   border: none;
   border-radius: 4px;
   float: right;
   background-color: #EEE;
 }
-
 .searchbox__button img {
   color: #999;
 }
@@ -136,7 +134,6 @@ div.product-description {
   color: #666;
   text-align: justify;
 }
-
 .product-description__body.col-md-9 {
   padding-right: 0;
   padding-left: 0;
@@ -148,7 +145,6 @@ div.product-description {
   border-radius: 5px;
   background-color: #FFF;
 }
-
 .row.list-item {
   padding: 14px;
   list-style: none;
@@ -168,19 +164,16 @@ div.product-description {
 div.list-item__details {
   padding-left: 14px;
 }
-
-.list-item__details__location {
+div.list-item__details .list-item__details__location {
   font-size: 12px;
   color: #666;
 }
-
-.list-item__details__price {
+div.list-item__details .list-item__details__price {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
 }
-
-.list-item__details__description {
+div.list-item__details .list-item__details__description {
   color: #333;
 }
 

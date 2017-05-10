@@ -51,9 +51,9 @@ div.product-description {
 	padding: 14px 0;
 	color: #666;
 	text-align: justify;
-}
 
-.product-description__body.col-md-9 {
-	padding-right: 0;
-	padding-left: 0;
+	&.col-md-9 {
+		padding-right: 0;
+		padding-left: 0;
+	}	
 }
