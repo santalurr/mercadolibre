@@ -1,0 +1,41 @@
+.row.list-wrapper {
+	margin: 0;
+	padding: 0 14px;
+	border-radius: 5px;
+	background-color: #FFF;
+}	
+
+.row.list-item {
+	padding: 14px;
+	list-style: none;
+	border-bottom: 1px solid #EEE;
+	display: block;	
+}
+
+.col-md-3.list-item__image {
+	padding: 0;
+	width: 150px;
+	height: 150px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px !important;
+}
+
+div.list-item__details {
+	padding-left: 14px;	
+}
+
+.list-item__details__location {
+	font-size: 12px;
+	color: #666;
+}
+
+.list-item__details__price {
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 32px;
+}
+
+.list-item__details__description {
+	color: #333;	
+}

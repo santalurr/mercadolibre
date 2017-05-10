@@ -1,2 +1,4 @@
 app/components
 node_modules
+.sass-cache
+app/main.css.map
