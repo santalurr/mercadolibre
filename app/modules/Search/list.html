@@ -13,7 +13,10 @@
 
 				<div class="col-md-7 list-item__details">
 					<div class="list-item__details__price"> 
-						${{item.price}}
+						${{item.price | number: 0}}
+						
+						<img ng-src="assets/ic_shipping.png" 
+							ng-if="item.shipping.free_shipping">
 					</div>
 					<div 
 						ui-sref="ItemDetail({ id: item.id })"

@@ -6,12 +6,13 @@
 
 	.searchbar__fieldset.input-group {
 		top: 8px;
-		width: 70%;
+		width: 75%;
 	    margin: 0 auto;
 
 		.searchbar__input.form-control {
 			max-width: 90%;
 			min-width: 90px;
+			font-size: 18px;
 			float: right;
 			border-top-left-radius: 4px;
 			border-bottom-left-radius: 4px;
@@ -24,7 +25,7 @@
 	position: absolute;
 	display: inline-block;
 	z-index: 9999;
-	left: 15%;
+	left: 12.3%;
 	width: 4%;
 	top: 8px;
 }

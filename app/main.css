@@ -5,7 +5,7 @@
 }
 
 .content-wrapper {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -49,12 +49,13 @@ div.col-md-12 {
 }
 .searchbar .searchbar__fieldset.input-group {
   top: 8px;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .searchbar .searchbar__fieldset.input-group .searchbar__input.form-control {
   max-width: 90%;
   min-width: 90px;
+  font-size: 18px;
   float: right;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -65,7 +66,7 @@ div.col-md-12 {
   position: absolute;
   display: inline-block;
   z-index: 9999;
-  left: 15%;
+  left: 12.3%;
   width: 4%;
   top: 8px;
 }
@@ -80,9 +81,13 @@ div.col-md-12 {
   color: #999;
 }
 
+div.product-detail {
+  padding-left: 16px;
+}
+
 .product-detail__type {
   font-size: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .row.product-wrapper {
@@ -92,8 +97,11 @@ div.col-md-12 {
   background-color: #FFF;
 }
 
-.product-image {
-  width: 680px;
+.product-view.col-md-9 {
+  padding: 0;
+}
+.product-view .product-view__image {
+  max-width: 680px;
 }
 
 .search-filter {
@@ -104,6 +112,9 @@ div.col-md-12 {
 .product-detail__price {
   margin-top: 32px;
   font-size: 46px;
+}
+.product-detail__price .product-detail__price__cents {
+  font-size: 60%;
 }
 
 .product-detail__title {
@@ -130,40 +141,41 @@ div.product-description {
   color: #666;
 }
 
-.product-description__body {
-  padding: 14px 0;
+p.product-description__body {
+  padding: 16px 0;
   color: #666;
   text-align: justify;
+  overflow: hidden;
 }
-.product-description__body.col-md-9 {
+p.product-description__body.col-md-12 {
   padding-right: 0;
   padding-left: 0;
 }
 
 .row.list-wrapper {
   margin: 0;
-  padding: 0 14px;
+  padding: 0 16px;
   border-radius: 5px;
   background-color: #FFF;
 }
 .row.list-item {
-  padding: 14px;
+  padding: 16px;
   list-style: none;
   border-bottom: 1px solid #EEE;
   display: block;
 }
 
-.col-md-3.list-item__image {
+.list-item__image.col-md-3 {
   padding: 0;
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px !important;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px !important;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 
 div.list-item__details {
-  padding-left: 14px;
+  padding-left: 16px;
 }
 div.list-item__details .list-item__details__location {
   font-size: 12px;

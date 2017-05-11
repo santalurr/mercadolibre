@@ -9,20 +9,23 @@
 		</section>
 
 		<section class="row product-wrapper">
-			<img class="col-md-9 product-image" ng-src="{{item.pictures[0].secure_url}}">
-			
+			<div class="col-md-9 product-view">
+				<img class="product-view__image" ng-src="{{item.pictures[0].secure_url}}">
+			</div>
+
 			<div class="col-md-3 product-detail">
 				<div class="product-detail__type">
-					Nuevo - {{item.sold_quantity}} Vendidos
+					{{item.condition === 'new' ? 'Nuevo' : 'Usado'}}
+					- {{item.sold_quantity}} Vendidos
 				</div>
 				<strong class="product-detail__title">
 					{{item.title}}
 				</strong>
 
 				<div class="product-detail__price">
-					${{item.base_price}}
-					<sup>
-						00
+					${{ars}}
+					<sup class="product-detail__price__cents">
+						{{cents ? cents : '00'}}
 					</sup>
 				</div>
 				<button type="button" class="product-detail__buy-button">
@@ -35,7 +38,7 @@
 					Descripción del Producto
 				</span>
 
-				<p class="col-md-11 product-description__body" ng-bind-html="description">
+				<p class="col-md-12 product-description__body" ng-bind-html="description">
 					
 				</p>
 			</div>
