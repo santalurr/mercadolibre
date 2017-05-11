@@ -3,7 +3,6 @@ angular.module('MercadoLibreApp')
 .factory('ItemService', ['$http', 'API',
 
 function($http, API) {
-        
     return {
 		getItem: function(id) {
             return $http.get(API.ITEM + id);

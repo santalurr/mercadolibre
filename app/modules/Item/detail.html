@@ -1,6 +1,5 @@
 <div class="main-wrapper">
 	<section class="content-wrapper search-results">
-	<!--pass search results styles to content wrapper-->
 		<section class="search-filter">
 			<span ng-repeat="category in categories"> 
 				{{category.name}} 
@@ -38,9 +37,7 @@
 					Descripción del Producto
 				</span>
 
-				<p class="col-md-12 product-description__body" ng-bind-html="description">
-					
-				</p>
+				<p class="col-md-12 product-description__body" ng-bind-html="description"></p>
 			</div>
 		</section>
 	</section>

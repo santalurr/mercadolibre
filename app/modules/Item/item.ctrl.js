@@ -13,7 +13,7 @@ angular.module('MercadoLibreApp')
 		getCategories($scope.item.category_id);
 	},
 	function(error) {
-
+		console.log(error);
 	});	
 
 	function getDescription(itemId) {
@@ -22,7 +22,7 @@ angular.module('MercadoLibreApp')
 			$scope.description = res.data.text;
 		},
 		function(error) {
-			
+			console.log(error);
 		});	
 	}
 
@@ -32,7 +32,7 @@ angular.module('MercadoLibreApp')
 			$scope.categories = res.data.path_from_root;
 		},
 		function(error) {
-			
+			console.log(error);
 		});	
 	}
   

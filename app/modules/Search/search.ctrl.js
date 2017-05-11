@@ -15,7 +15,7 @@ angular.module('MercadoLibreApp')
 			$scope.itemsList = totalItems.splice(0, 4);
 		},
 		function(error) {
-			
+			console.log(error);			
 		});
 	}
 });
