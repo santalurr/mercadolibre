@@ -18,6 +18,8 @@
   "homepage": "https://github.com/santalurr/mercadolibre#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "request": "^2.81.0"
   },
   "devDependencies": {
