@@ -11,7 +11,7 @@ Install:
 - Ruby & Sass
 - bower
 
-### Running
+### Installing
 
 1. Run:
 ```
@@ -21,7 +21,10 @@ npm install
 ```
 grunt
 ```
-3. Run:
+
+### Running
+
+Run:
 ```
 npm start
 ```
