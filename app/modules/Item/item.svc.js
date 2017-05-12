@@ -8,12 +8,8 @@ function($http, API) {
             return $http.get(API.ITEMS + "/" + id);
         },
 
-		getItemDescription: function(id) {
-            return $http.get(API.ITEM + id + "/description");
-        },
-
 		getCategories: function(id) {
-            return $http.get(API.CATEGORY + id);
+            return $http.get(API.CATEGORIES + "/" + id);
         }
     };
 }]);

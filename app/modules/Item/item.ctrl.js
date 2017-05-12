@@ -4,28 +4,13 @@ angular.module('MercadoLibreApp')
 
 	ItemService.getItem($stateParams.id)
 	.then(function(res) {
-		console.log(res);
 		$scope.item = res.data.item;
-		var priceArray = $scope.item.price.toString().split(".");
-		$scope.ars = priceArray[0];
-		$scope.cents = priceArray[1];
 
-		getDescription($scope.item.id)
-		getCategories($scope.item.category_id);
+		getCategories($scope.item.category);
 	},
 	function(error) {
 		console.log(error);
 	});	
-
-	function getDescription(itemId) {
-		ItemService.getItemDescription(itemId)
-		.then(function(res) {
-			$scope.description = res.data.text;
-		},
-		function(error) {
-			console.log(error);
-		});	
-	}
 
 	function getCategories(categoryId) {
 		ItemService.getCategories(categoryId)
@@ -36,5 +21,4 @@ angular.module('MercadoLibreApp')
 			console.log(error);
 		});	
 	}
-  
 });

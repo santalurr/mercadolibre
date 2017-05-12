@@ -27,7 +27,7 @@ angular.module('MercadoLibreApp',
     .state('ItemDetail', {
         url: '/items/:id',
         controller: 'ItemCtrl',
-        templateUrl: 'modules/Item/detail.html'
+        templateUrl: 'modules/Item/item.html'
     });
 
 })
@@ -40,12 +40,11 @@ angular.module('MercadoLibreApp',
   // https://api.mercadolibre.com/sites/MLA/search?q=:query
 
   // SEARCH: meliAddress + '/sites/MLA/search?q=',
-  // ITEM: meliAddress + '/items/'
-  // CATEGORY: meliAddress + '/categories/'
+  // ITEMS: meliAddress + '/items/'
+  // CATEGORIES: meliAddress + '/categories/'
   
   return {
     ITEMS: apiAddress + '/items',
-    CATEGORY: meliAddress + '/categories/',
-    ITEM: meliAddress + '/items/'
+    CATEGORIES: apiAddress + '/categories',
   }
 })()); 

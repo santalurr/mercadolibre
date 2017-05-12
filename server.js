@@ -1,12 +1,10 @@
 var express = require('express');
 var app = express();
-var path = require("path");
-var request = require('request');
-var items = require('./items');
+var routes = require('./api/routes.js');
 
 app.use(express.static(__dirname + '/app'));
 
-app.use('/api', items);
+app.use('/api', routes);
 
 app.get('*',function(req,res) {
   res.sendFile('./index.html');
