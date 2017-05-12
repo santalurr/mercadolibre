@@ -9,6 +9,7 @@ MercadoLibre Front End Test
 Install:
 - nodeJS
 - Ruby & Sass
+- bower
 
 ### Running
 
