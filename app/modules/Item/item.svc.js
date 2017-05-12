@@ -5,7 +5,7 @@ angular.module('MercadoLibreApp')
 function($http, API) {
     return {
 		getItem: function(id) {
-            return $http.get(API.ITEM + id);
+            return $http.get(API.ITEMS + "/" + id);
         },
 
 		getItemDescription: function(id) {

@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/santalurr/mercadolibre#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

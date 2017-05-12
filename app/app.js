@@ -32,12 +32,19 @@ angular.module('MercadoLibreApp',
 })
 
 .constant('API', (function() {
-  var apiAddress = 'https://api.mercadolibre.com';
-  // https://api.mercadolibre.com:id​/description
+  var apiAddress = 'http://localhost:3000/api',
+      meliAddress = 'https://api.mercadolibre.com';
+
+  // https://api.mercadolibre.com/items/:id​/description
   // https://api.mercadolibre.com/sites/MLA/search?q=:query
+
+  // SEARCH: meliAddress + '/sites/MLA/search?q=',
+  // ITEM: meliAddress + '/items/'
+  // CATEGORY: meliAddress + '/categories/'
+  
   return {
-    SEARCH: apiAddress + '/sites/MLA/search?q=',
-    ITEM: apiAddress + '/items/',
-    CATEGORY: apiAddress + '/categories/'
+    ITEMS: apiAddress + '/items',
+    CATEGORY: meliAddress + '/categories/',
+    ITEM: meliAddress + '/items/'
   }
 })()); 
