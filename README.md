@@ -6,17 +6,23 @@ MercadoLibre Front End Test
 
 ### Prerequisites
 
-- nodejs
+Install:
+- nodeJS
 - Ruby & Sass
 
-### Installing
+### Running
 
+1. Run:
 ```
 npm install
 ```
-
+2. Run:
 ```
 grunt
+```
+3. Run:
+```
+npm start
 ```
 
 Express JS server will be started at:
