@@ -11,6 +11,10 @@
 	margin: 0 auto;
 }	
 
+.link:hover {
+	cursor: pointer;
+}
+
 @import 'reset';
 @import 'searchbar';
 @import 'product-detail';

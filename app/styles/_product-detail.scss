@@ -1,5 +1,6 @@
 div.product-detail {
 	padding-left: $space-narrow;
+	overflow: hidden;
 }
 
 .product-detail__type {
@@ -40,6 +41,7 @@ div.product-detail {
 
 .product-detail__title {
 	font-size: 24px;
+	overflow: hidden;
 }
 
 .product-detail__buy-button {

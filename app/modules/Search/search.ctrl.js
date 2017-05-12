@@ -10,9 +10,8 @@ angular.module('MercadoLibreApp')
 		$scope.lastSearch = $stateParams.query;
 
 		SearchService.getProductList($stateParams.query)
-		.then(function(res) {
-			var totalItems = res.data.results;
-			$scope.itemsList = totalItems.splice(0, 4);
+		.then(function(res) { 
+			$scope.itemsList = res.data.items;
 		},
 		function(error) {
 			console.log(error);			

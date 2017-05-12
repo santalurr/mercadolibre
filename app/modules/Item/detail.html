@@ -9,7 +9,7 @@
 
 		<section class="row product-wrapper">
 			<div class="col-md-9 product-view">
-				<img class="product-view__image" ng-src="{{item.pictures[0].secure_url}}">
+				<img class="product-view__image" ng-src="{{item.picture}}">
 			</div>
 
 			<div class="col-md-3 product-detail">
@@ -22,9 +22,9 @@
 				</strong>
 
 				<div class="product-detail__price">
-					${{ars}}
+					${{item.price.amount}}
 					<sup class="product-detail__price__cents">
-						{{cents ? cents : '00'}}
+						{{item.price.decimals ? item.price.decimals : '00'}}
 					</sup>
 				</div>
 				<button type="button" class="product-detail__buy-button">

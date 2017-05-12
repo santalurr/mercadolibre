@@ -4,7 +4,8 @@ angular.module('MercadoLibreApp')
 
 	ItemService.getItem($stateParams.id)
 	.then(function(res) {
-		$scope.item = res.data;
+		console.log(res);
+		$scope.item = res.data.item;
 		var priceArray = $scope.item.price.toString().split(".");
 		$scope.ars = priceArray[0];
 		$scope.cents = priceArray[1];
